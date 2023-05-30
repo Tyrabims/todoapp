@@ -3,6 +3,7 @@ import { SyntheticEvent, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import TodoForm from './components/TodoForm';
 import { Todo } from './components/Todo';
+import TodoList from './components/TodoList';
 
 
 function App() {
@@ -20,16 +21,20 @@ if(todo){
   
 
 
-console.log(todos)
+//console.log(todos)
   return (
     <>
-    <TodoForm todo={todo} 
-    setTodo={setTodo}
-    handleClick={handleClick}
-    />
-{todos.map((t) => (
-  <li>{t.todo}</li>
-))}
+      <TodoForm todo={todo} 
+      setTodo={setTodo}
+      handleClick={handleClick}
+      />
+      <TodoList 
+      todos={todos} 
+      setTodos={setTodos}
+      />
+      {/* {todos.map((t) => (
+        <li>{t.todo}</li>
+      ))} */}
     </>
   )
 }
