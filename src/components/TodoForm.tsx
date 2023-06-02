@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
-  handleClick: (event: React.SyntheticEvent) => void;
+  handleClick: (event:  React.SyntheticEvent) => void;
 }
 
 const TodoForm = ({ todo, setTodo, handleClick }: Props) => {

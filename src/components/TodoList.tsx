@@ -10,10 +10,8 @@ interface TodosProps{
 
 const TodoList = ({todos, setTodos}: TodosProps) => {
 
-
-
+const clearTodos =() => {setTodos([])}
   return (
-
     <div>
       {todos.map((todo) => (
   <EachTodo 
@@ -23,6 +21,8 @@ const TodoList = ({todos, setTodos}: TodosProps) => {
   setTodos={setTodos}
   />
 ))}
+    
+    
     </div>
   )
 }

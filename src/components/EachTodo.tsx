@@ -54,8 +54,6 @@ const EachTodo = ({todo, todos, setTodos}: Props) => {
               )
                   )
          }
-         
-         
             <span className='icon' onClick = {() => {
               if(!edit && !todo.completeTodo) {
                 setEdit(!edit);
