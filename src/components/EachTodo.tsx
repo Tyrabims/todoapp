@@ -39,6 +39,8 @@ const EachTodo = ({todo, todos, setTodos}: Props) => {
        setEdit(false);
   }
  
+
+
   return (
     <>
       <form className='each_todo' onSubmit={(event) => handleEdit(event, todo.id)}> 

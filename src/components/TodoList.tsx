@@ -10,8 +10,12 @@ interface TodosProps{
 
 const TodoList = ({todos, setTodos}: TodosProps) => {
 
-const clearTodos =() => {setTodos([])}
+  const clearTodos =() => {
+    setTodos([])
+  }
+
   return (
+    <>
     <div>
       {todos.map((todo) => (
   <EachTodo 
@@ -22,8 +26,12 @@ const clearTodos =() => {setTodos([])}
   />
 ))}
     
-    
     </div>
+    <div>
+    <button className='d-grid gap-2 d-md-block col-3 mx-auto btn btn-secondary' 
+    onClick={() => clearTodos()} type='button' style={{marginTop:100 }}>Clear</button>
+  </div>
+  </>
   )
 }
 

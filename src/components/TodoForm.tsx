@@ -10,7 +10,6 @@ interface Props {
 const TodoForm = ({ todo, setTodo, handleClick }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
   
-
   return (
     <div>
       <h1>Tasks to be done</h1>
