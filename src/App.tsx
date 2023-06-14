@@ -18,7 +18,11 @@ function App() {
       ]);
       setTodo("");
     }
+
+    localStorage.setItem('todo', JSON.stringify(todo))
   };
+
+  // const todosToLocalStoarage = (todos: Todo[]) => {localStorage.setItem('todos', JSON.stringify(todos))}
 
   return (
     <>
