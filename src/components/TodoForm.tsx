@@ -4,12 +4,11 @@ import "bootstrap/dist/css/bootstrap.css";
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
-  handleClick: (event: React.SyntheticEvent) => void;
+  handleClick: (event:  React.SyntheticEvent) => void;
 }
 
 const TodoForm = ({ todo, setTodo, handleClick }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
-
   return (
     <div>
       <h1>Tasks to be done</h1>
